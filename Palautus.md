@@ -128,10 +128,12 @@ _Miellyttävästi lukko ilmestynyt sivulle_
 
 Horcasitas, J & Heidi, E. &  & Walia, A. (2024). Digitalocean. Verkkosivu. _How To Secure Apache with Let's Encrypt on Ubuntu_  Luettavissa: https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu/ Luettu: 26.09.2025.
 
-Karvinen, T. 2017. Verkkosivu. _First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_ Luettavissa: https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/ Luettu 13.09.2025.
+Karvinen, T. 2017. Verkkosivu. _First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_ Luettavissa: https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/ Luettu: 13.09.2025.
 
-Karvinen, T. 2025. Verkkosivu. _Linux Palvelimet 2025_ Luettavissa: https://terokarvinen.com/linux-palvelimet/ Luettu 13.09.2025.
+Karvinen, T. 2025. Verkkosivu. _Linux Palvelimet 2025_ Luettavissa: https://terokarvinen.com/linux-palvelimet/ Luettu: 13.09.2025.
 
 Let's Emcrypt. 2018. Keskustelufoorumi. _Multiple virtual hosts, multiple domains in host one cert for each host_ Luettavissa: https://community.letsencrypt.org/t/multiple-virtual-hosts-multiple-domains-in-host-one-cert-for-each-host/ Luettu: 26.09.2025.
 
-Heidi, E. DigitalOcean. Verkkosivu. _How to Set Up Let’s Encrypt Certificates for Multiple Apache Virtual Hosts on Ubuntu 14.04_ Luettavissa: https://www.digitalocean.com/community/tutorials/how-to-set-up-let-s-encrypt-certificates-for-multiple-apache-virtual-hosts-on-ubuntu-14-04/ Luettu 26.09.2025.
+Heidi, E. DigitalOcean. Verkkosivu. _How to Set Up Let’s Encrypt Certificates for Multiple Apache Virtual Hosts on Ubuntu 14.04_ Luettavissa: https://www.digitalocean.com/community/tutorials/how-to-set-up-let-s-encrypt-certificates-for-multiple-apache-virtual-hosts-on-ubuntu-14-04/ Luettu: 26.09.2025.
+
+101LABS. _Lab 50 – Capturing credentials submitted through http with Wireshark_ Luettu: https://www.101labs.net/comptia-security/lab-50-capturing-credentials-submitted-through-http-with-wireshark/ Luettavissa: 26.09.2025.
