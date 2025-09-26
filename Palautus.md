@@ -39,7 +39,7 @@ Otin tunnilta muistiinpanoja ja hyödyllinen ohje löytyi myös DigitalOceanilta
   
   - **`sudo apt install certbot python3-certbot-apache`** - asennettiin certbot
  
-  ![1](images/1.png)
+![1](images/1.png)
 
 _Onnistunut certbotin asennus_
  
@@ -49,13 +49,13 @@ _Onnistunut certbotin asennus_
 
 "Hint: The Certificate Authority failed to verify the temporary Apache configuration changes made by Certbot. Ensure that the listed domains point to this Apache server and that it is accessible from the internet."
 
-  ![3](images/3.png)
+![3](images/3.png)
 
  _sertifikaatin hankinta epäonnistuu_
 
 * **`curl -l liljasharifi.com`** komennolla vinkkejä virhetilanteeseen
 
-  ![4](images/4.png)
+![4](images/4.png)
 
 _vinkki virhetilanteesta_
 
@@ -110,6 +110,13 @@ Kello oli tässä kohtaa 23:02 ja siirryin seuraavaan vaiheeseen.
 
 * Syötin hakukenttään domainin eli liljasharifi.com
 
+![8](images/8.png)
+
+_A tulos eli onnistunut_
+
+![9](images/9.png)
+
+_Miellyttävästi lukko ilmestynyt sivulle_
 
 # c) Vapaaehtoinen
 
