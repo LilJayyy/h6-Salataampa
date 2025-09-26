@@ -37,7 +37,7 @@ Otin tunnilta muistiinpanoja ja hyödyllinen ohje löytyi myös DigitalOceanilta
 * Asensin certbotin
   - **`sudo apt update`** - päivittelin paketit
   
-  - **`sudo apt install cerbot python3-cerbot-apache`** - asennettiin cerbot
+  - **`sudo apt install certbot python3-certbot-apache`** - asennettiin certbot
  
   ![1](images/1.png)
 
@@ -89,7 +89,7 @@ No loppu hyvin kaikki hyvin - eli lähdetään alusta:
 
 * **`ssh lilja-web-01-fin@178.62.231.96`**
 
-### Asennetaan uudelleen cerbot mutta oikeaan paikkaan: 
+### Asennetaan uudelleen certbot mutta oikeaan paikkaan: 
 * **`sudo apt update`** 
 * **`sudo apt install certbot python3-certbot-apache`** 
 
