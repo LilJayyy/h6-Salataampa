@@ -104,7 +104,7 @@ No loppu hyvin kaikki hyvin - eli lähdetään alusta:
 
 _Onnistunut lopputulos_
 
-Tässä kohtaa ehkä hieman ihmetytti miten tuollainen yksinkertainen asia jäi huomaamatta. No toisaalta mielummin yksinkertainen ratkaisu kuin monimutkainen ongelma.
+Tässä kohtaa ehkä hieman ihmetytti miten tuollainen yksinkertainen asia jäi huomaamatta. No toisaalta mielummin yksinkertainen ratkaisu, kuin monimutkainen ongelma.
 
 Kello oli tässä kohtaa 23:02 ja siirryin seuraavaan vaiheeseen.
 
