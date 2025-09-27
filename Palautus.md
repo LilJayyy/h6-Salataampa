@@ -135,8 +135,9 @@ Päätin luoda paikallisesti virtuaalikoneen sisälle weppisivun localhostina, k
 
 * **`sudo apt update`** - päivitetään paketit
 
-* Ulkomuistista:
-### Luodaan hakemisto lomakkeelle ja annoin oikeudet
+## Ulkomuistista:
+
+**Luodaan hakemisto lomakkeelle ja annoin oikeudet**
 
   - **`sudo mkdir -p /var/www/demo_local`**
     
