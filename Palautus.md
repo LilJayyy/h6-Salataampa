@@ -216,7 +216,7 @@ Tässä kohtaa yhdistin useita löytämiäni Youtube-videoita, jossa oli helpomp
 * **`wireshark &`** - käynnistin wiresharkin
   - Tehty vain paikallisesti joten valitsin Loopback(lo)
 
-* **`pimg -c 10 127.0.0.1.`** - syötetty terminaaliin: vain kymmenen pakettia, jotta ei tarvinnut keskeyttää
+* **`ping -c 10 127.0.0.1.`** - syötetty terminaaliin: vain kymmenen pakettia, jotta ei tarvinnut keskeyttää
 
 ![14](images/14.png)
 
