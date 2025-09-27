@@ -132,7 +132,7 @@ Pohdin miten tämän toteuttaisin weppilomakkeen tehtävänannon. Totesin, että
 
 Löysin hyvän ohjeen lomakkeen (form) HTML-koodin luomiseen Apachen, sekä W3 schoolsin youtubesta ja verkkosivuilta.
 
-## Uuden testisivun luominen
+## Uuden testisivun ja lomakkeen luominen
 
 Päätin luoda paikallisesti virtuaalikoneen sisälle weppisivun localhostina, kuten ensimmäisissä tehtävänannoissa HTTP-yhteyttä käyttäen:
 
@@ -187,7 +187,7 @@ Havaitsin onneksi hyvissä ajoin että Youtube-videon asennusprosessi eteni eri 
 
 * **`sudo apt install wireshark -y`** - asennetaan itse Wireshark
 
-* ** "Yes" kohtaan "Non-superusers can capture packets?"
+* **"Yes"** kohtaan "Non-superusers can capture packets?"
 
 * **`sudo usermod -aG wireshark $liljas`** - Lisätään käyttäjä Wireshark ryhmään
 
