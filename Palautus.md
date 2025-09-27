@@ -142,7 +142,7 @@ Päätin luoda paikallisesti virtuaalikoneen sisälle weppisivun localhostina, k
 
 ## Ulkomuistista:
 
-### Luodaan hakemisto lomakkeelle ja annoin oikeudet**
+### Luodaan hakemisto lomakkeelle ja annoin oikeudet
 
   - **`sudo mkdir -p /var/www/demo_local`**
     
