@@ -20,8 +20,7 @@ DirectX-versio: DirectX 12
 
 # x) Artikkeli 
 
-
-
+TEE TÄMÄ OSUUS TÄNÄÄN 27.9.2025!!!!!!!!!!!
 
 # a) Let's
 
@@ -120,8 +119,134 @@ _Miellyttävästi lukko ilmestynyt sivulle_
 
 # c) Vapaaehtoinen
 
+Tähän osioon siirryin seuraavana päivänä 27.09.2025 kello 11.58.
+
+Yritin katsoa opiskelijoiden http -linkkejä, mutta en saanut niitä auki. Siirryin verkkoon etsimään tietoa.
+
+Pohdin miten tämän toteuttaisin weppilomakkeen tehtävänannon. Totesin, että olisi paras luoda nyt uusi testisivusto tätä varten, sillä haluan siistiä domainin sisältöä ja siirtyä sen osalta pikkuhiljaa ammattimaisempaan versioon aiemmmista testiversioista.
+
+Löysin hyvän ohjeen lomakkeen (form) HTML-koodin luomiseen Apachen, sekä W3 schoolsin youtubesta ja verkkosivuilta.
+
+## Uuden testisivun luominen
+
+Päätin luoda paikallisesti virtuaalikoneen sisälle weppisivun localhostina, kuten ensimmäisissä tehtävänannoissa HTTP-yhteyttä käyttäen:
+
+* Käynnistin virtuaalikoneen
+
+* **`sudo apt update`** - päivitetään paketit
+
+* Ulkomuistista:
+### Luodaan hakemisto lomakkeelle ja annoin oikeudet
+
+  - **`sudo mkdir -p /var/www/demo_local`**
+    
+  - **`sudo chown -R liljas:www-data /var/www/demo_local`**
+    
+  - **`sudo chmod -R 755 /var/www/demo_local`**
+ 
+### Sitten HTML-lomake sisältöineen (Ohje katsottu W3 schoolsin sivuilta ja Apachen)
+
+  - **`nano /var/www/html/demo_local/testilomake.html`**
+    
+  - `Ctrl + O, Enter ja Ctrl X`
+ 
+ ### PHP-lomakkeen käsittelijän lisääminen
+  - **`nano /var/www/html/demo_local/submit.php`**
+    
+  - Lisäsin sisällön jolla lukee lomaketietoja
+
+  - Potkaistaan demonia ja varmistetaan että Syntax OK (konfiguraation tarkistus configtestillä)
+  - **`sudo systemctl reload apache2`**
+    
+  - **`sudo apache2ctl configtest`**
+
+Ja viimeisenä jännitetään eli virtuaalikoneen internet-selaimella sivustolle:
+* http://localhost/demo_local/testilomake.html
+
+Aluksi ilmeni virhe, kun avasin ensin internet-selaimen isäntä koneesta. Kunnes totesin - että kyseessä on vain paikallinen weppisivu joten ainoa tapa päästä sisään oli virtuaalikoneen sisältä.
+
+![11](images/11.png)
+
+_Yllä mainittu prosessi kuvana_ 
+
+## Sieppaa liikennettä
+
+Tässä osiossa seurasin Ansonin (2024) ohjetta, ja askUbuntu (2006) keskustelufoorumia, sillä Wiresharkin käyttö on uutta.
+
+Havaitsin onneksi hyvissä ajoin että Youtube-videon asennusprosessi eteni eri tavalla ja pikaisen googlettelun jälkeen löytyi oikeat komennot asennukseen.
+
+### Wireshark Asennus
+
+* **`sudo apt update && sudo apt upgrade -y`** - pakettien päivitys alkuun
+
+* **`sudo apt install wireshark -y`** - asennetaan itse Wireshark
+
+* ** "Yes" kohtaan "Non-superusers can capture packets?"
+
+* **`sudo usermod -aG wireshark $liljas`** - Lisätään käyttäjä Wireshark ryhmään
+
+* Kirjauduin välissä ulos
+
+### Virhetilanne
+
+***liljas@lilja-virtualbox:~$  ** (wireshark:19272) 14:24:54.204481 [Capture WARNING] ./ui/capture.c:1019 -- capture_interface_stat_start(): Couldn't run dumpcap in child process: Permission denied***
+
+* Tähän löytyi ratkaisu AskUbuntu-sivuilta:
+
+* **`sudo dpkg-reconfigure wireshark-common`**
+  
+* **`sudo chmod +x /usr/bin/dumpcap`** - Pakettien kaappauksen salliminen
+
+Tässä oli ymmärtääkseni syynä (vinkki komennon alusta chmod)  eli oikeudet puuttuivat Wiresharkilta kaappaamiseen (capturing).
+
+![12](images/12.png)
+
+_Virhetilanne ja korjaus kuvassa_
+
+### Käyttö
+
+Tässä kohtaa yhdistin useita löytämiäni Youtube-videoita, jossa oli helpompi hahmottaa Wiresharkin toimintaa. Erityisesti apuna oli "How to use Wireshark to capture local host traffic" ja "Mastering Wireshark: The Complete Tutorial!" videot. 
+
+* **`wireshark &`** - käynnistin wiresharkin
+  - Tehty vain paikallisesti joten valitsin Loopback(lo)
+
+* **`pimg -c 10 127.0.0.1.`** - syötetty terminaaliin: vain kymmenen pakettia, jotta ei tarvinnut keskeyttää
+
+![14](images/14.png)
+
+_Lokitiedot alkoivat muodostumaan_ 
+
+### Pakettien analysointi
+
+Kuva 1
+![15](images/15.png)
+
+Kuva 2
+![17](images/17.png)
+
+Kuva 3
+![18](images/18.png)
 
 
+### Mitä havaitsen? 
+
+Kuvassa 1: 
+
+* Protokolla: **ICMP(Internet Control Message Protocol)** - testataan verkkoyhteyttä tällä 
+
+2. Paketti 21: Käyttää protokollaa  **MDNS eli (Multicast DNS)- kysely** osoitteeseen 224.0.0.251. 
+
+Kuvassa 2:
+
+* Täytin lomakkeen käyttäjätunnuksella: esimerkki ja salasana: salasana
+
+* Riville 36 ilmestyi protokolla "HTTP"
+
+Kuvassa 3: 
+
+* Rivillä 36 näen kuitenkin kriittisen kohdan: **Käyttäjätunnus ja salasana näkyy**
+
+* Tällä on äärettömän suuri vaikutus tietoturvaan, koska sitä ei ole. Kaikki syötetty tieto on jokaisen näkyvissä.
 
 
 # Lähteet
@@ -134,6 +259,22 @@ Karvinen, T. 2025. Verkkosivu. _Linux Palvelimet 2025_ Luettavissa: https://tero
 
 Let's Emcrypt. 2018. Keskustelufoorumi. _Multiple virtual hosts, multiple domains in host one cert for each host_ Luettavissa: https://community.letsencrypt.org/t/multiple-virtual-hosts-multiple-domains-in-host-one-cert-for-each-host/ Luettu: 26.09.2025.
 
+Hacker Joe  Mastering Wireshark: The Complete Tutorial! https://www.youtube.com/watch?v=a_4MjV_-7Sw&t=500s 
+
 Heidi, E. DigitalOcean. Verkkosivu. _How to Set Up Let’s Encrypt Certificates for Multiple Apache Virtual Hosts on Ubuntu 14.04_ Luettavissa: https://www.digitalocean.com/community/tutorials/how-to-set-up-let-s-encrypt-certificates-for-multiple-apache-virtual-hosts-on-ubuntu-14-04/ Luettu: 26.09.2025.
 
 101LABS. _Lab 50 – Capturing credentials submitted through http with Wireshark_ Luettu: https://www.101labs.net/comptia-security/lab-50-capturing-credentials-submitted-through-http-with-wireshark/ Luettavissa: 26.09.2025.
+
+W3 schools. http://youtube.com/watch?v=VLeERv_dR6Q&list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s
+
+W3 schoolds. https://www.w3schools.com/php/php_forms.asp
+
+Anson Alexander https://www.youtube.com/watch?v=qTaOZrDnMzQ Wireshark Tutorial for Beginners | Network Scanning Made Easy
+
+https://www.youtube.com/watch?v=aOILSNnbh58 Wireshark Terminal Version: Analyzing Network Traffic in Real-Time
+
+https://askubuntu.com/questions/246363/setting-up-wireshark-for-non-root-user
+
+How to use Wireshark to capture local host traffic (127.0.0.1) https://www.youtube.com/watch?v=V0_RPT6HsE4
+
+
