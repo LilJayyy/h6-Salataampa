@@ -161,7 +161,7 @@ Päätin luoda paikallisesti virtuaalikoneen sisälle weppisivun localhostina, k
     
   - Lisäsin sisällön jolla lukee lomaketietoja
 
-  - Potkaistaan demonia ja varmistetaan että Syntax OK (konfiguraation tarkistus configtestillä)
+### Potkaistaan demonia ja varmistetaan että Syntax OK (konfiguraation tarkistus configtestillä)
   - **`sudo systemctl reload apache2`**
     
   - **`sudo apache2ctl configtest`**
