@@ -2,10 +2,10 @@
 
 
 ## Sisältö
-- [X) Artikkeli](#x-artikkeli)
-- [A) Let's](#a-lets)
-- [B) A-rating](#b-a-rating)
-- [C) Vapaaehtoinen](#c-vapaaehtoinen)
+- [x) Artikkeli](#x-artikkeli)
+- [a) Let's](#a-lets)
+- [b) A-rating](#b-a-rating)
+- [c) Vapaaehtoinen](#c-vapaaehtoinen)
 
 ### Koneen tekniset tiedot
 Prosessori: Intel Core i5-8265U CPU @ 1.60 GHz (1.80 GHz turbo, 8 ydintä)
