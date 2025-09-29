@@ -101,7 +101,7 @@ Ja sitten heureka -hetki. Tajusin että olen tehnyt nämä edellä mainitut kome
 
 Toisaalta tuntui hyvältä, kun hoksasin itse asian. Lueskelin muutamia sivustoja läpi mutta heräsi ajatus, että jokin oleellinen menee tässä väärin.
 
-No loppu hyvin kaikki hyvin - eli lähdetään alusta:
+Lähdin tekemään alusta:
 
 ### Muodostetaan SSH- yhteys palvelimelle:
 
@@ -118,7 +118,7 @@ No loppu hyvin kaikki hyvin - eli lähdetään alusta:
 
 _Onnistunut lopputulos_
 
-Tässä kohtaa ehkä hieman ihmetytti miten tuollainen yksinkertainen asia jäi huomaamatta. No toisaalta mielummin yksinkertainen ratkaisu, kuin monimutkainen ongelma.
+Yksinkertainen asia jäi huomaamatta. Onneksi virhetilanteeseen löytyi yksinkertainen ratkaisu.
 
 Kello oli tässä kohtaa 23:02 ja siirryin seuraavaan vaiheeseen.
 
