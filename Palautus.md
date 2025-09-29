@@ -272,6 +272,8 @@ Tässä muutamia havaintoja yllä olevista kuvista:
 
 ### Lopputulemaa
 
+Pidin raportin teossa hieman välipäiviä, joten tätä kirjoittaessa on 29.09.2025 kello 20:07.
+
 Tämän raportin tekeminen ja tehtävänanto oli kaikinpuolin mieluisaa. Vaikka joitakin kohtia piti käydä katsomassa ohjeista, tuntuu että ymmärsi nopeasti itsekin, missä teki virheen jos sellainen kävi.
 
 Opittavaa jäi tämänkin jälkeen varmasti eikä ihan kaikki ulkomuistista tule - vaikka on tullut paljon opittuakin.
