@@ -282,6 +282,8 @@ Opittavaa jäi tämänkin jälkeen varmasti eikä ihan kaikki ulkomuistista tule
 
 Anson A. 2024. Youtube. Video. _Wireshark Tutorial for Beginners | Network Scanning Made Easy_ Katsottavissa: https://www.youtube.com/watch?v=qTaOZrDnMzQ Katsottu: 26.09.2025.
 
+Apache. Verkkosivu. _SSL/TLS Strong Encryption: How-To_ Luettavissa: https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html#configexample Luettu: 29.09.2025.
+
 AskUbuntu. Keskustelufoorumi. _Setting up wireshark for non root user_ Luettavissa: https://askubuntu.com/questions/246363/setting-up-wireshark-for-non-root-user Luettu: 26.09.2025.
 
 Computer General Purpose. 2020. Youtube. Video. _How to use Wireshark to capture local host traffic (127.0.0.1)_ Katsottavissa: https://www.youtube.com/watch?v=V0_RPT6HsE4 Katsottu: 26.09.2025.
@@ -296,7 +298,9 @@ Karvinen, T. 2017. Verkkosivu. _First Steps on a New Virtual Private Server – 
 
 Karvinen, T. 2025. Verkkosivu. _Linux Palvelimet 2025_ Luettavissa: https://terokarvinen.com/linux-palvelimet/ Luettu: 13.09.2025.
 
-Let's Emcrypt. 2018. Keskustelufoorumi. _Multiple virtual hosts, multiple domains in host one cert for each host_ Luettavissa: https://community.letsencrypt.org/t/multiple-virtual-hosts-multiple-domains-in-host-one-cert-for-each-host/ Luettu: 26.09.2025.
+Let's Encrypt. 2018. Keskustelufoorumi. _Multiple virtual hosts, multiple domains in host one cert for each host_ Luettavissa: https://community.letsencrypt.org/t/multiple-virtual-hosts-multiple-domains-in-host-one-cert-for-each-host/ Luettu: 26.09.2025.
+
+Let's Encrypt. 2025. Verkkosivu. _Getting Started_ Luettavissa: https://letsencrypt.org/how-it-works/ Luettu: 29.09.2025.
 
 Red Hat Enterprise Linux. 2025. Youtube. Video. _Wireshark Terminal Version: Analyzing Network Traffic in Real-Time_ Katsottavissa: https://www.youtube.com/watch?v=aOILSNnbh58 Katsottu: 26.09.2025.
 
@@ -305,7 +309,6 @@ Red Hat Enterprise Linux. 2025. Youtube. Video. _Wireshark Terminal Version: Ana
 W3 schools. 2024. Youtube. Video. _HTML Tutorial_ Katsottavissa: http://youtube.com/watch?v=VLeERv_dR6Q&list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s Katsottu: 26.09.2025.
 
 W3 schools. Verkkosivu. _PHP Form Handling_ Luettavissa: https://www.w3schools.com/php/php_forms.asp Luettu: 26.09.2025.
-
 
 
 
