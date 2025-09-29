@@ -25,7 +25,21 @@ DirectX-versio: DirectX 12
 
 # x) Artikkeli 
 
-TEE TÄMÄ OSUUS TÄNÄÄN 27.9.2025!!!!!!!!!!!
+### Let's- Encrypt - How it works
+
+* Tässä artikkelissa kerrotaan että Let's Encrypt ja ACME-protokolla mahdollistavat HTTP serverin käyttöönoton siten, että  selainluotetun sertifikaatin saa käyttöön ilman välikäsiä.
+
+* Prosessissa on kaksi askelta: ensin ACME-client todentaa Certificate Authoritylle (CA) että web-serveri kontrolloi domainia ja jonka jälkeen asiakas voi pyytää tai hylätä serifikaatin kyseiselle domainille.
+
+### The Apache Software Foundation 2025: Apache HTTP Server Version 2.4 [Official] Documentation: SSL/TLS Strong Encryption: How-To: Basic Configuration Example
+
+* SSL konfiguraation pitää sisältää vähintään:
+  - **SSLCertificateFile** - sertifikaattitiedosto
+  - **SSLCertificateKeyFile** - yksityinen avain
+  - **HTTPS portti (443 oletus)**
+  - **Salattuun liikenteeseen ohjaus (SSL Engine)**
+
+* Tässä raportissa neuvotaan perusasetusten käyttöönotossa ja ohjeistetaan lukeaan loput SSL dokumentaatiosta ennen etenemistä haastavempiin vaiheisiin.
 
 # a) Let's
 
@@ -236,6 +250,8 @@ Kuva 3
 
 ### Mitä havaitsen? 
 
+Tässä muutamia havaintoja yllä olevista kuvista:
+
 **Kuvassa 1**
 
 * Protokolla: **ICMP(Internet Control Message Protocol)** - testataan verkkoyhteyttä tällä 
@@ -254,21 +270,25 @@ Kuva 3
 
 * Tällä on äärettömän suuri vaikutus tietoturvaan, koska sitä ei ole. Kaikki syötetty tieto on jokaisen näkyvissä.
 
+### Lopputulemaa
+
+Tämän raportin tekeminen ja tehtävänanto oli kaikinpuolin mieluisaa. Vaikka joitakin kohtia piti käydä katsomassa ohjeista, tuntuu että ymmärsi nopeasti itsekin, missä teki virheen jos sellainen kävi.
+
+Opittavaa jäi tämänkin jälkeen varmasti eikä ihan kaikki ulkomuistista tule - vaikka on tullut paljon opittuakin.
 
 # Lähteet
-MUOKKAA VIELÄ NÄITÄ VUOSILUVUT PUUTUU
 
-Anson A. Youtube. Video. _Wireshark Tutorial for Beginners | Network Scanning Made Easy_ Katsottavissa: https://www.youtube.com/watch?v=qTaOZrDnMzQ Katsottu: 26.09.2025.
+Anson A. 2024. Youtube. Video. _Wireshark Tutorial for Beginners | Network Scanning Made Easy_ Katsottavissa: https://www.youtube.com/watch?v=qTaOZrDnMzQ Katsottu: 26.09.2025.
 
 AskUbuntu. Keskustelufoorumi. _Setting up wireshark for non root user_ Luettavissa: https://askubuntu.com/questions/246363/setting-up-wireshark-for-non-root-user Luettu: 26.09.2025.
 
-Computer General Purpose. Youtube. Video. _How to use Wireshark to capture local host traffic (127.0.0.1)_ Katsottavissa: https://www.youtube.com/watch?v=V0_RPT6HsE4 Katsottu: 26.09.2025.
+Computer General Purpose. 2020. Youtube. Video. _How to use Wireshark to capture local host traffic (127.0.0.1)_ Katsottavissa: https://www.youtube.com/watch?v=V0_RPT6HsE4 Katsottu: 26.09.2025.
 
-Hacker Joe  Mastering Wireshark: The Complete Tutorial! https://www.youtube.com/watch?v=a_4MjV_-7Sw&t=500s 
+Hacker Joe. 2024. Youtube. Video.  _Mastering Wireshark: The Complete Tutorial!_ Katsottavissa: https://www.youtube.com/watch?v=a_4MjV_-7Sw&t=500s Katsottu: 26.09.2025.
 
-Heidi, E. DigitalOcean. Verkkosivu. _How to Set Up Let’s Encrypt Certificates for Multiple Apache Virtual Hosts on Ubuntu 14.04_ Luettavissa: https://www.digitalocean.com/community/tutorials/how-to-set-up-let-s-encrypt-certificates-for-multiple-apache-virtual-hosts-on-ubuntu-14-04/ Luettu: 26.09.2025.
+Heidi, E. DigitalOcean. 2016. Verkkosivu. _How to Set Up Let’s Encrypt Certificates for Multiple Apache Virtual Hosts on Ubuntu 14.04_ Luettavissa: https://www.digitalocean.com/community/tutorials/how-to-set-up-let-s-encrypt-certificates-for-multiple-apache-virtual-hosts-on-ubuntu-14-04/ Luettu: 26.09.2025.
 
-Horcasitas, J & Heidi, E. &  & Walia, A. (2024). Digitalocean. Verkkosivu. _How To Secure Apache with Let's Encrypt on Ubuntu_  Luettavissa: https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu/ Luettu: 26.09.2025.
+Horcasitas, J & Heidi, E. &  & Walia, A. 2024. Digitalocean. Verkkosivu. _How To Secure Apache with Let's Encrypt on Ubuntu_  Luettavissa: https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu/ Luettu: 26.09.2025.
 
 Karvinen, T. 2017. Verkkosivu. _First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS_ Luettavissa: https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/ Luettu: 13.09.2025.
 
@@ -276,11 +296,11 @@ Karvinen, T. 2025. Verkkosivu. _Linux Palvelimet 2025_ Luettavissa: https://tero
 
 Let's Emcrypt. 2018. Keskustelufoorumi. _Multiple virtual hosts, multiple domains in host one cert for each host_ Luettavissa: https://community.letsencrypt.org/t/multiple-virtual-hosts-multiple-domains-in-host-one-cert-for-each-host/ Luettu: 26.09.2025.
 
-Red Hat Enterprise Linux. Youtube. Video. _Wireshark Terminal Version: Analyzing Network Traffic in Real-Time_ Katsottavissa: https://www.youtube.com/watch?v=aOILSNnbh58 
+Red Hat Enterprise Linux. 2025. Youtube. Video. _Wireshark Terminal Version: Analyzing Network Traffic in Real-Time_ Katsottavissa: https://www.youtube.com/watch?v=aOILSNnbh58 Katsottu: 26.09.2025.
 
 101LABS. Verkkosivu. _Lab 50 – Capturing credentials submitted through http with Wireshark_ Luettu: https://www.101labs.net/comptia-security/lab-50-capturing-credentials-submitted-through-http-with-wireshark/ Luettavissa: 26.09.2025.
 
-W3 schools. Youtube. Video. _HTML Tutorial_ Katsottavissa: : http://youtube.com/watch?v=VLeERv_dR6Q&list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s Katsottu: 26.09.2025.
+W3 schools. 2024. Youtube. Video. _HTML Tutorial_ Katsottavissa: http://youtube.com/watch?v=VLeERv_dR6Q&list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s Katsottu: 26.09.2025.
 
 W3 schools. Verkkosivu. _PHP Form Handling_ Luettavissa: https://www.w3schools.com/php/php_forms.asp Luettu: 26.09.2025.
 
