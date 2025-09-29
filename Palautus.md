@@ -207,6 +207,8 @@ Havaitsin onneksi hyvissä ajoin että Youtube-videon asennusprosessi eteni eri 
 
 * Kirjauduin välissä ulos
 
+![20](images/20.png)
+
 ### Virhetilanne
 
 ***liljas@lilja-virtualbox:~$  ** (wireshark:19272) 14:24:54.204481 [Capture WARNING] ./ui/capture.c:1019 -- capture_interface_stat_start(): Couldn't run dumpcap in child process: Permission denied***
